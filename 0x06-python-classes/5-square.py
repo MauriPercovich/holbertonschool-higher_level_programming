@@ -4,8 +4,6 @@
 
 class Square:
     '''init Square, and raising Errors'''
-
-
     def __init__(self, size=0):
         self.size = size
     '''getter size'''
@@ -25,10 +23,9 @@ class Square:
     '''calculate the area of the square'''
     def area(self):
         return self.__size ** 2
+
     def my_print(self):
         '''prints'''
-
-
         if self.__size == 0:
             print()
         else:
