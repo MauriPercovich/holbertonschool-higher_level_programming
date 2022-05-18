@@ -1,6 +1,14 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    matrixx = matrix.copy()
-    for i in range(len(matrixx)):
-        matrixx[i] = list(map(lambda pow: pow ** 2, matrixx[i]))
-    return matrixx
+'''main'''
+
+
+def safe_print_list(my_list=[], x=0):
+    i = 0
+    try:
+        while i < x:
+            print(f"{my_list[cont]}", end="")
+            cont += 1
+    except IndexError:
+        pass
+    print("")
+    return cont
