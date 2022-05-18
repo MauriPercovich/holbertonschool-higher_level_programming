@@ -50,7 +50,7 @@ class Square:
         if self.area() == other.area():
             return True
         else:
-                return False
+            return False
 
     def __ne__(self, other):
         '''return comparison x!=y'''
