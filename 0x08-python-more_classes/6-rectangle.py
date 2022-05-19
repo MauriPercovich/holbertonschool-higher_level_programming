@@ -6,7 +6,7 @@ class Rectangle:
     '''rectangle'''
 
 
-    number = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -53,5 +53,5 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
     '''delete a rectangle'''
     def __del__(self):
-        Rectangle.number -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
