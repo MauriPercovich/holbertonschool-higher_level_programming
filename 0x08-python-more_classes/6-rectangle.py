@@ -4,7 +4,10 @@
 
 class Rectangle:
     '''rectangle'''
+
+
     number = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
