@@ -6,9 +6,9 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 filename = "add_item.json"
 try:
-    file = load("add_item.json")
+    _list = load_from_json_file(filename)
 except FileNotFoundError:
     file = []
 for i in sys.argv[1:]:
     file.append(i)
-save(file, "add_item.json")
+save_to_json_file(file, "add_item.json")
