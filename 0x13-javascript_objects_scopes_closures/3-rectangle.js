@@ -7,6 +7,7 @@ module.exports = class Rectangle {
     this.width = w;
     this.height = h;
   }
+
   print () {
     const rows = this.height;
     const columns = this.width;
