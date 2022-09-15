@@ -1,6 +1,6 @@
 #!/usr/bin/node
 /* File System Object */
-var fs = require('fs');
+const fs = require('fs');
 
 try {
   const data = fs.readFileSync(process.argv[2], 'utf8');
